@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Live2D / Demo</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/js/all.min.js"></script>
+<style>
+#github svg {
+	transition: all 1s;
+	fill: #222;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0;
+	width: 80px;
+	height: 80px;
+}
+#github:hover svg {
+	width: 160px;
+	height: 160px;
+}
+</style>
+</head>
+<body>
+	<div>
+		<div id="stage">
+			<div id="inner">
+				<div id="cover">
+					<div id="text">
+						<span style="color: cyan;">MIMI</span><span style="color: white;">POWERED</span>
+					</div>
+					<div id="detail"></div>
+					<div id="handle"></div>
+				</div>
+				<canvas class="mb-4" id="live2d" width="800" height="800"></canvas>
+			</div>
+			<button class="btn btn-link" id="info"><i class="fa fa-lg fa-info"></i></button>
+			<button class="btn btn-link" id="refresh"><i class="fa fa-lg fa-sync-alt"></i></button>
+		</div>
+	</div>
+<script src="../autoload.js"></script>
+</body>
+</html>
